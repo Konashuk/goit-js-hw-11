@@ -17,6 +17,7 @@ formEl.addEventListener('submit', function (event) {
 loadMoreBtn.addEventListener('click', loadMore);
 
 let page = 1;
+let totalHits = 0;
 
 function loadMore() {
   page += 1;
