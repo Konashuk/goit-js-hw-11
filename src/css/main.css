@@ -1,3 +1,11 @@
+p,
+h1,
+h2,
+h3 {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -13,6 +21,12 @@ form {
   background-color: aqua;
 }
 
+.gallery__link {
+  display: block;
+  text-decoration: none;
+  height: 100%;
+}
+
 .container-input {
   position: relative;
 }
@@ -26,7 +40,7 @@ input {
   height: 30px;
 }
 
-button {
+.search-btn {
   background-color: transparent;
   position: absolute;
   top: 20px;
@@ -43,4 +57,49 @@ button {
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
+}
+
+.photo-card {
+  max-width: 300px;
+}
+
+.info {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.info-item {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+}
+
+span {
+  font-size: 12px;
+}
+
+.container-load {
+  display: flex;
+  justify-content: center;
+}
+
+.load-more {
+  margin-top: 10px;
+  border-radius: 10px;
+  width: 150px;
+  height: 40px;
+  background-color: aqua;
+}
+
+.load-more:hover {
+  background-color: aquamarine;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
