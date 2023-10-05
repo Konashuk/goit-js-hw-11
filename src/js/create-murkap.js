@@ -1,5 +1,9 @@
 import { searchImage } from './get-api';
 
+import Notiflix from 'notiflix';
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
+
 function createMarkupCard(data) {
   const hits = data.hits;
   console.log(data.totalHits);

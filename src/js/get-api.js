@@ -1,3 +1,5 @@
+import axios from 'axios';
+
 async function searchImage(page = 1) {
   const inputValue = inputEl.value.trim();
   const BASE_URL = 'https://pixabay.com/api/?';
