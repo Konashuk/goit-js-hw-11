@@ -1,22 +1,5 @@
-import { searchImage } from './get-api';
-
-import Notiflix from 'notiflix';
-import SimpleLightbox from 'simplelightbox';
-import 'simplelightbox/dist/simple-lightbox.min.css';
-
 function createMarkupCard(data) {
-  const hits = data.hits;
-  console.log(data.totalHits);
-  Notiflix.Notify.info(`Hooray! We found ${totalHits} images.`);
-
-  if (hits.length === 0) {
-    Notiflix.Notify.failure(
-      'Sorry, there are no images matching your search query. Please try again.'
-    );
-    return;
-  }
-
-  const markup = hits
+  const markup = data
     .map(
       ({
         webformatURL,
@@ -46,11 +29,6 @@ function createMarkupCard(data) {
         </div>`
     )
     .join('');
-
-  const lightbox = new SimpleLightbox('.gallery a', {
-    captionDelay: 250,
-    captionsData: `alt`,
-  });
 
   return markup;
 }

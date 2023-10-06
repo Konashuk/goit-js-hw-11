@@ -103,3 +103,11 @@ span {
   pointer-events: none;
   visibility: hidden;
 }
+
+.arrow-btn {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: transparent;
+  border: none;
+}
